@@ -46,7 +46,11 @@
    ```bash
    
    docker run  -p 8000:8000 -v pdf/dir/path:/app/ langchain:latest
-
+   
+   ```
+   Note:Let's say you have pdf files in /data directory then command will be.
+   ```bash
+   docker run -p 8000:8000 -v /data:/app/data langchain:latest
    ```
    This will start the server at :
    ```
@@ -57,7 +61,7 @@
 ## Endpoints
 
 The API provides the following endpoints:
-
+Note: Use the directory path used when runnning docker image (/data) , when using the below endpoint.
 1. `/pdf_directory`
    List the contents of a PDF directory and generate vector embeddings.
 
