@@ -1,5 +1,5 @@
 venv
 __pycache__
-api_key.txt
 api_key_test.txt
-*.log
+LOGs.log
+pdf_res
